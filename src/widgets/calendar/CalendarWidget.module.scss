@@ -1,0 +1,51 @@
+@use '@/app/mixins' as *;
+@use '@/app/variables' as *;
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.pickerContainer {
+    margin-bottom: 1rem;
+}
+
+.selectedDate {
+    @include flex-center;
+    justify-content: space-between;
+    background-color: rgba(59, 130, 246, 0.1);
+    padding: 0.5rem;
+    border-radius: $border-radius;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.label {
+    font-size: 0.875rem;
+    color: $text-secondary;
+}
+
+.value {
+    font-weight: 500;
+    color: $primary-color;
+}
+
+.loadingContainer {
+    .title {
+        color: $text-secondary;
+    }
+}
+
+.loadingPlaceholder {
+    height: 2.5rem;
+    background-color: $border-color;
+    border-radius: $border-radius;
+    margin-bottom: 0.5rem;
+}
+
+.loadingText {
+    color: $text-secondary;
+    font-size: 0.875rem;
+}

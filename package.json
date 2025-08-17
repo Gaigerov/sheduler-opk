@@ -1,0 +1,47 @@
+{
+  "name": "sheduler-opk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--experimental-vm-modules' next dev -p 3002",
+    "dev:watch": "nodemon --watch data --ext xlsx,csv,json --exec \"npm run dev\"",
+    "build": "next build",
+    "start": "NODE_OPTIONS='--experimental-vm-modules' next start -p 3002"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "7.3.1",
+    "@mui/x-date-pickers": "8.10.0",
+    "@next/font": "14.2.15",
+    "classnames": "2.5.1",
+    "date-fns": "4.1.0",
+    "dayjs": "1.11.13",
+    "mobx": "6.13.7",
+    "mobx-react-lite": "4.1.0",
+    "next": "15.4.6",
+    "next-pwa": "5.6.0",
+    "node-xlsx": "^0.24.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-icons": "5.5.0",
+    "read-excel-file": "^5.8.8",
+    "sass": "1.90.0",
+    "xlsx": "^0.18.5",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3",
+    "@types/classnames": "2.3.0",
+    "@types/node": "24.2.1",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "css-loader": "7.1.2",
+    "eslint": "9",
+    "eslint-config-next": "15.4.6",
+    "nodemon": "^3.1.10",
+    "style-loader": "4.0.0",
+    "typescript": "5"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "tailwindCSS.includeLanguages": {
+        "typescript": "typescriptreact"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
+}

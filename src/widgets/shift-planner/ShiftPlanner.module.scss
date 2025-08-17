@@ -1,0 +1,226 @@
+@use '@/app/variables' as *;
+
+.container {
+    padding: 1rem;
+    background-color: $bg-color;
+    border-radius: $border-radius-lg;
+}
+
+.contentCard {
+    background-color: $bg-secondary;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-md;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: $text-color;
+
+    .highlight {
+        color: $primary-color;
+    }
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: $text-secondary;
+}
+
+.selectRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 640px) {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.selectContainer {
+    flex-grow: 1;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.shiftGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.shiftSection {
+    padding: 1rem;
+    border-radius: $border-radius-lg;
+    border-width: 1px;
+
+    &Day {
+        background-color: rgba(239, 246, 255, 0.5);
+        border-color: rgba(191, 219, 254, 0.5);
+    }
+
+    &Night {
+        background-color: rgba(238, 242, 255, 0.5);
+        border-color: rgba(199, 210, 254, 0.5);
+    }
+}
+
+.shiftHeader {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 0.5rem;
+    }
+
+    &Day {
+        color: $primary-color;
+    }
+
+    &Night {
+        color: #4f46e5;
+    }
+}
+
+.employeeList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.employeeItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-secondary;
+    padding: 0.75rem;
+    border-radius: $border-radius;
+    box-shadow: $shadow-sm;
+    border: 1px solid $border-color;
+}
+
+.employeeInfo {
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 0.5rem;
+    }
+}
+
+.removeButton {
+    color: $danger-color;
+    background: none;
+    padding-left: 1rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.emptyState {
+    background-color: rgba(239, 246, 255, 0.7);
+    color: $primary-color;
+    padding: 0.75rem;
+    border-radius: $border-radius;
+    text-align: center;
+    border: 1px solid rgba(191, 219, 254, 0.5);
+}
+
+.statsCard {
+    background-color: $bg-secondary;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-md;
+    padding: 1.25rem;
+}
+
+.statsHeader {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 0.5rem;
+    }
+}
+
+.statsItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.statsLabel {
+    color: $text-secondary;
+}
+
+.statsValue {
+    font-weight: 500;
+}
+
+.tableContainer {
+    overflow-x: auto;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.tableHeader {
+    background-color: $bg-color;
+}
+
+.tableHeaderCell {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: $text-secondary;
+}
+
+.tableRow {
+    &:hover {
+        background-color: $bg-color;
+    }
+}
+
+.tableCell {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid $border-color;
+}
+
+.emptyTable {
+    padding: 1.5rem;
+    text-align: center;
+    color: $text-secondary;
+}

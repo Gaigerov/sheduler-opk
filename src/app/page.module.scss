@@ -1,0 +1,108 @@
+@import './variables';
+
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+}
+
+.mainContainer {
+    flex: 1;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.main {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0;
+
+    @media (min-width: 1024px) {
+        padding-right: 1.5rem;
+    }
+}
+
+.aside {
+    display: none;
+    width: 20rem;
+    background-color: transparent;
+
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.stickyContainer {
+    position: sticky;
+    top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.statsCard {
+    background-color: $bg-secondary;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-md;
+    padding: 1.5rem;
+}
+
+.statsTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 0.5rem;
+    }
+}
+
+.statsItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.statsLabel {
+    color: $text-secondary;
+}
+
+.statsValue {
+    font-weight: 500;
+}
+
+.noticeCard {
+    background-color: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: $border-radius;
+    padding: 1rem;
+}
+
+.noticeText {
+    color: #92400e;
+    font-size: 0.875rem;
+}
+
+.uploadContainer {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}

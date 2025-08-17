@@ -1,0 +1,50 @@
+@use '@/app/variables' as *;
+
+.button {
+    border-radius: $border-radius;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+    }
+
+    &-primary {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &-secondary {
+        background-color: $secondary-color;
+        color: $text-color;
+    }
+
+    &-outline {
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+    }
+
+    &:hover {
+        background-color: $info-color-light;
+    }
+
+    &-sm {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    &-md {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        height: max-content;
+    }
+
+    &-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,63 @@
+.container {
+    margin-bottom: 1rem; 
+
+    .label {
+        display: block;
+        margin-bottom: 0.5rem; 
+        font-weight: 500; 
+        color: #374151;
+    }
+
+    .inputContainer {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        .input {
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            width: 100%;
+            font-size: 0.875rem;
+
+            &::file-selector-button {
+                margin-right: 1rem; 
+                padding: 0.5rem 1rem; 
+                border-radius: 0.5rem; 
+                border: 0; 
+                font-size: 0.875rem;
+                font-weight: 600;
+                background-color: #eff6ff;
+                color: #1d4ed8; 
+                cursor: pointer;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: #dbeafe; 
+                }
+            }
+        }
+
+        .spinnerContainer {
+            margin-left: 0.5rem;
+
+            .spinner {
+                animation: spin 1s linear infinite;
+                border-radius: 9999px; 
+                height: 1.25rem; 
+                width: 1.25rem;
+                border-top: 2px solid #3b82f6; 
+                border-bottom: 2px solid #3b82f6; 
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
