@@ -13,7 +13,7 @@ import { Employee } from '@/entities/employee/types';
 
 export default function HomePage() {
     const employeesStore = useEmployeesStore();
-    const [uploadKey, setUploadKey] = useState(0); // Для сброса инпута после загрузки
+    const [uploadKey, setUploadKey] = useState(0);
     
     const handleUploadAction = (data: Employee[]) => {
         employeesStore.loadEmployees(data);

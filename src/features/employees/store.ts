@@ -8,7 +8,6 @@ export class EmployeesStore {
         makeAutoObservable(this)
     }
 
-    // Теперь метод принимает данные
     loadEmployees(data: Employee[]) {
         this.employees = data
     }
